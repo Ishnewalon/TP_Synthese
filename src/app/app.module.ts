@@ -34,7 +34,6 @@ import { YoutubeComponent } from './application/youtube/youtube.component';
     Error404Component,
     TutorielsComponent,
     ReadOneComponent,
-    YoutubeComponent,
   ],
   imports: [
     BrowserModule,

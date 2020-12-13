@@ -7,7 +7,7 @@ import { YoutubePipe } from './youtube.pipe';
 
 
 @NgModule({
-  declarations: [ YoutubePipe],
+  declarations: [YoutubeComponent, YoutubePipe],
   imports: [
     CommonModule,
     YoutubeRoutingModule
