@@ -1,0 +1,22 @@
+{
+  "myApi": [
+    {
+      "name": "Test",
+      "phone": "123-456-7890",
+      "address": "add",
+      "orderChoice": "Pour Un Enfant",
+      "color": "#8dc13e",
+      "delivery": "2020-12-28",
+      "id": 1
+    },
+    {
+      "name": "Stephanie Degagne-Kuzak",
+      "phone": "514-234-6286",
+      "address": "8863 rue Giroux",
+      "orderChoice": "Pour Lui",
+      "color": "#102aad",
+      "delivery": "2020-12-21",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<div class="container-fluid">
+    <h1>Modifier la Commande de Noel</h1>
+    <form [formGroup]="updateOrderForm" (ngSubmit)="updateOrder()">
+        <!--<div *ngIf="validMessage != ''">
+            <h2 class="has-info">{{validMessage}}</h2>
+        </div>-->
+
+        <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" class="form-control" formControlName="name" [(ngModel)]="order.name" >
+        </div>
+        <!--<div *ngIf="!myForm.name.valid && (myForm.name.dirty || myForm.name.touched)">
+            <div [hidden]="!myForm.name.errors.required">Le nom est obligatoire</div>
+        </div>-->
+
+
+        <div class="form-group">
+            <label for="phone">Numéro de téléphone</label>
+            <input type="tel"  id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" formControlName="phone" [(ngModel)]="order.phone" >
+        </div>
+        <!--<div *ngIf="!myForm.phone.valid && (myForm.phone.dirty || myForm.phone.touched)">
+            <div [hidden]="!myForm.phone.errors.required">Le numéro de téléphone est obligatoire</div>
+        </div>-->
+
+        <div class="form-group">
+            <label for="address">Adresse</label>
+            <input type="text" id="address" formControlName="address" [(ngModel)]="order.address" >
+        </div>
+        <!--<div *ngIf="!myForm.address.valid && (myForm.address.dirty || myForm.address.touched)">
+            <div [hidden]="!myForm.address.errors.required">L'adresse est obligatoire</div>
+        </div>-->
+
+        <div class="form-group">
+            <label for="orderChoice">Pour qui magasinez-vous</label>
+            <select class="form-control" id="orderChoice" formControlName="orderChoice" [(ngModel)]="order.orderChoice" >
+                <option>Pour Elle</option>
+                <option>Pour Lui</option>
+                <option>Pour Un Enfant</option>
+                <option>Pour animal de compagnie</option>
+            </select>
+        </div>
+        <!--<div *ngIf="!myForm.orderChoice.valid && (myForm.orderChoice.dirty || myForm.orderChoice.touched)">
+            <div [hidden]="!myForm.orderChoice.errors.required">Le choix de commande est obligatoire</div>
+        </div>-->
+
+        <div class="form-group">
+            <label for="color">Choix de couleur</label>
+            <input type="color" id="color" formControlName="color" [(ngModel)]="order.color">
+        </div>
+        <!--<div *ngIf="!myForm.color.valid && (myForm.color.dirty || myForm.color.touched)">
+            <div [hidden]="!myForm.color.errors.required">Le choix de couleur est obligatoire</div>
+        </div>-->
+
+        <div class="form-group">
+            <label for="delivery">Date de livraison</label>
+            <input type="date"  id="delivery" formControlName="delivery" [(ngModel)]="order.delivery">
+        </div>
+        <!--<div *ngIf="!myForm.delivery.valid && (myForm.delivery.dirty || myForm.delivery.touched)">
+            <div [hidden]="!myForm.delivery.errors.required">La date de livraison est obligatoire</div>
+        </div>-->
+
+        <div class="form-group">
+            <label for="messages">Message particulier</label>
+            <textarea class="form-control" id="messages" 
+            cols="30" rows="5" ></textarea>
+        </div>
+
+        <div>
+
+            <button class="btn btn-success">Save changes</button>
+            <a [routerLink]="[ '/crud' ]" id="cancel" class="btn btn-danger">Cancel</a>
+
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <h1 class="text-capitalize text-center">Les commandes de noel</h1>
+
+    <table class="table table-striped table-hover table-responsive">
+        <thead class="thead thead-danger">
+            <tr>
+                <th *ngFor="let entete of headElements" scope="col">{{entete}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listOrder">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.phone}}</td>
+                <td>{{item.address}}</td>
+                <td>{{item.orderChoice}}</td>
+                <td>{{item.color}}</td>
+                <td>{{item.delivery}}</td>
+                <td>
+                    <a [routerLink]="[ '/readOne/', item.id ]" class="btn btn-info ml-1">View</a>
+                    <a [routerLink]="[ '/update/', item.id ]" class="btn btn-success ml-1">Update</a>
+                    <button type="button" class="btn btn-danger ml-1" (click)="delete(item.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

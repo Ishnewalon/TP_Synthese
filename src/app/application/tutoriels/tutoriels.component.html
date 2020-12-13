@@ -1,0 +1,38 @@
+<ng-container [ngSwitch]="myParametre">
+    <ng-container *ngSwitchCase="1">
+        <div>
+            <h1>Mini tutoriel  Angular</h1>
+            <div>
+                <p>Angular est un framework qui permet d'écrire des sites web, ce qui veut dire le front-end. Angular utilise principalement le langage TypeScript.
+                    Ce framework a été développé par Google et il est open-source. Un projet typique angular est composé de composants, de services et de metadata.
+                </p>
+                <p>Angular is a framework used to make websites. Angular is an open-source TypeScript based framework that was created by Google. 
+                    A typical Angular project is made up of components and services.
+                </p>
+                <img [src]="['./../../../assets/images/angularLogo.png']" alt="Angular logo" class="img-fluid">
+            </div>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="2">
+        <div>
+            <h1>Mini tutoriel  Crud</h1>
+            <p>Crud est un acronym pour Create Read Update Delete. Le Crud est les fonctions nécessaires pour gérer des données stockées.</p>
+            <p>Crud is an acronym for Create Read Update Delete. Crud refers to the four methods used when dealing with stored data. </p>
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchCase="3">
+        <div>
+            <h1>Mini tutoriel Relations</h1>
+            <p>Il y a beaucoup de types de relation différents. Il y a l'héritage, l'implémentation, l'association, la composition et l'agrégation. Chacun de ces relations 
+                sont représentées par une ligne ou une flèche différente. La composition permet d'indiquer une classe ou un objet qui ne peut pas exister sans l'autre.  
+            </p>
+            <img [src]="['./../../../assets/images/Diagramme_TP2.png']" alt="Un schéma de relations">
+        </div>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+        <div>
+            <h1>Tutoriel a venir</h1>
+            <p>Coming Soon To a Theater Near You</p>
+        </div>
+    </ng-container>
+</ng-container>
