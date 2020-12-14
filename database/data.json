@@ -10,13 +10,31 @@
       "id": 1
     },
     {
-      "name": "Stephanie Degagne-Kuzak",
-      "phone": "514-234-6286",
-      "address": "8863 rue Giroux",
+      "name": "dsfsdvsca",
+      "phone": "980-432-4325",
+      "address": "fhdfd",
       "orderChoice": "Pour Lui",
-      "color": "#102aad",
-      "delivery": "2020-12-21",
-      "id": 5
+      "color": "#993333",
+      "delivery": "2020-12-30",
+      "id": 6
+    },
+    {
+      "name": "Random",
+      "phone": "432-546-8634",
+      "address": "An Address",
+      "orderChoice": "Pour animal de compagnie",
+      "color": "#149978",
+      "delivery": "2021-01-07",
+      "id": 7
+    },
+    {
+      "name": "Another Addition",
+      "phone": "853-432-7623",
+      "address": "Wheels Turn Av",
+      "orderChoice": "Pour Elle",
+      "color": "#80328f",
+      "delivery": "2021-02-17",
+      "id": 8
     }
   ]
 }
