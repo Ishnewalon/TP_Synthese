@@ -21,7 +21,8 @@ export const PLAYLIST: any[]=
         items: [
             {url: 'pKM8ieYWsjM', range: '1', author: 'Ben Briggs', title: 'Rainy Day'},
             {url: 'xkR_HwZt2T8', range: '2', author: 'GameChops', title: 'Route 1'},
-            {url: 'OWYcUWyqzdI', range: '3', author: 'Mikel', title: 'Kakariko Village'}
+            {url: 'OWYcUWyqzdI', range: '3', author: 'Mikel', title: 'Kakariko Village'},
+            {url: 'GJTiVx9jbFQ', range: '4', author: 'Pokemon', title: 'Route 209'},
         ]
     },
 ];
