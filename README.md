@@ -2,6 +2,9 @@
 
 # Les étapes à suivre pour créer le projet
 
+###### Utiliser le port 3008 pour le json-server -> json-server -w ./data.json --port 3008
+
+
 1- Créer le projet
    -> ng n PROJECT_NAME --routing
 
@@ -101,3 +104,7 @@ Launching project on Github Pages
     -> git add .
     -> git commit -m "COMMENT"
     -> git push -u origin master
+
+4- Go to Github/TP_Synthse/Settings 
+    -> Github Pages
+    -> Chose master(branch with project) branch / docs
