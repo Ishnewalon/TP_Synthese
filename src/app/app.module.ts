@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FormulairesComponent } from './theorie/formulaires/formulaires.component';
 import { NavbarComponent } from './application/navbar/navbar.component';
 import { FooterComponent } from './application/footer/footer.component';
 import { HomeComponent } from './application/home/home.component';
@@ -22,7 +21,6 @@ import { YoutubeComponent } from './application/youtube/youtube.component';
 @NgModule({
   declarations: [
     AppComponent,
-    FormulairesComponent,
     NavbarComponent,
     FooterComponent,
     HomeComponent,
@@ -34,6 +32,7 @@ import { YoutubeComponent } from './application/youtube/youtube.component';
     Error404Component,
     TutorielsComponent,
     ReadOneComponent,
+    YoutubeComponent
   ],
   imports: [
     BrowserModule,
