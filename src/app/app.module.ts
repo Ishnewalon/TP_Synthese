@@ -16,7 +16,6 @@ import { ContactComponent } from './application/contact/contact.component';
 import { Error404Component } from './application/error404/error404.component';
 import { TutorielsComponent } from './application/tutoriels/tutoriels.component';
 import { ReadOneComponent } from './application/crud/read-one/read-one.component';
-import { YoutubeComponent } from './application/youtube/youtube.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,6 @@ import { YoutubeComponent } from './application/youtube/youtube.component';
     Error404Component,
     TutorielsComponent,
     ReadOneComponent,
-    YoutubeComponent
   ],
   imports: [
     BrowserModule,
